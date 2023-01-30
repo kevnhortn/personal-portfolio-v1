@@ -1,0 +1,32 @@
+@use "../globals/colors";
+
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+li {
+	list-style: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	font-family: "Montserrat", "Gill Sans", "Gill Sans MT", "Trebuchet MS",
+		sans-serif;
+	// background-image: url("/images/grain-bg.gif");
+	background-color: colors.$bg-color;
+	-webkit-font-smoothing: antialiased;
+}
+
+img {
+	margin: 0;
+}

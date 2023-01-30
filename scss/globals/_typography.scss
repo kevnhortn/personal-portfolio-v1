@@ -1,0 +1,177 @@
+@forward "reset";
+@use "../globals/colors";
+
+/*
+Legacy way of creating CSS variables
+*/
+
+// :root {
+// 	--heading-font: "Syne", "Montserrat", "Gill Sans", "Gill Sans MT", sans-serif;
+// 	--paragraph-font: "Montserrat", "Gill Sans", "Gill Sans MT", sans-serif;
+// }
+
+$heading-font: "Syne", "Montserrat", "Gill Sans", "Gill Sans MT", sans-serif;
+$paragraph-font: "Montserrat", "Gill Sans", "Gill Sans MT", sans-serif;
+$h1-spacing: -0.3rem;
+$fancy-font: "Attractype", "Syne", "Montserrat", "Gills Sans", sans-serif;
+
+h1,
+h2 {
+	// font-family: $heading-font;
+	font-family: $fancy-font;
+	margin: 0;
+	color: colors.$text-color;
+}
+
+h1,
+h2 {
+	line-height: 100%;
+	// text-transform: uppercase;
+	letter-spacing: normal !important;
+	text-transform: none;
+	font-weight: normal;
+}
+
+// Original
+// h1 {
+// 	font-size: 4rem;
+// }
+
+h1 {
+	font-size: 7rem;
+	line-height: 100%;
+}
+
+h2 {
+	font-size: 3rem;
+	margin-bottom: 2rem;
+}
+
+.projects__subtitle {
+	font-size: 2rem;
+}
+
+h2::after {
+	content: ".";
+}
+
+h3 {
+	margin: 0;
+	font-weight: 500;
+	line-height: 140%;
+	font-size: 2rem;
+	color: colors.$accent2;
+	font-family: $paragraph-font;
+	letter-spacing: -0.05rem;
+}
+
+.footer-h3 {
+	font-size: 1.75rem;
+	line-height: 2.5rem;
+
+	@media (max-width: 62.5rem) {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+}
+
+p,
+.about-link-txt {
+	margin-top: 0;
+	font-family: $paragraph-font;
+	font-size: 1.12rem;
+	font-weight: 400;
+	color: colors.$text-color;
+	line-height: 1.75rem;
+	margin-bottom: 2rem;
+}
+
+.about-link-txt {
+	font-weight: bold;
+}
+
+small {
+	font-family: $paragraph-font;
+	color: colors.$accent2;
+	font-weight: 500;
+	line-height: 1.25rem;
+}
+
+@media (max-width: 768px) {
+	h2 {
+		font-size: 3rem;
+	}
+
+	.projects__subtitle {
+		font-size: 1.5rem;
+	}
+
+	.footer-h2 {
+		margin-bottom: 1rem;
+	}
+
+	h3 {
+		font-size: 1.1rem;
+	}
+
+	p {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 296px) {
+	h2 {
+		font-size: 0.85rem;
+	}
+}
+
+a,
+a:visited,
+a:active {
+	text-decoration: none;
+	font-family: $paragraph-font;
+	font-size: 1rem;
+	font-weight: 600;
+	text-transform: initial;
+	color: colors.$text-color;
+	transition: all 100ms ease-in-out;
+}
+
+button {
+	font-family: $paragraph-font;
+	border: none;
+	padding: 0.75rem 2.25rem;
+	border-radius: 25px;
+	font-weight: 600;
+	text-transform: initial;
+	font-size: 1rem;
+	transition: all 100ms ease-in-out;
+	box-shadow: 0px 10px 35px rgba(225, 85, 17, 0.25);
+}
+
+a:hover,
+button:hover {
+	color: colors.$accent2;
+	cursor: pointer;
+}
+
+button:hover {
+	padding: 0.75rem 3rem;
+}
+
+.open-btn {
+	background: transparent;
+	border: 3px solid colors.$text-color;
+	color: colors.$text-color;
+	box-shadow: none;
+	text-transform: initial;
+}
+
+.open-btn:hover {
+	border: 3px solid colors.$accent2;
+}
+
+.orange-txt {
+	font-weight: 800;
+	color: colors.$accent1;
+}

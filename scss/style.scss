@@ -1,0 +1,241 @@
+@forward "globals";
+@forward "layout";
+@use "globals/colors";
+@use "globals/typography";
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	// background-color: colors.$accent2;
+	background-color: rgb(208, 208, 208);
+	background-image: radial-gradient(
+			at 54% 80%,
+			rgba(92, 173, 155, 0.872) 0px,
+			transparent 50%
+		),
+		radial-gradient(
+			at 16% 37%,
+			rgba(229, 186, 143, 0.71) 0px,
+			transparent 50%
+		),
+		radial-gradient(
+			at 69% 47%,
+			rgba(116, 191, 216, 0.795) 0px,
+			transparent 50%
+		),
+		radial-gradient(
+			at 22% 63%,
+			rgba(110, 112, 242, 0.362) 0px,
+			transparent 50%
+		),
+		radial-gradient(
+			at 80% 100%,
+			rgba(232, 122, 100, 0.813) 0px,
+			transparent 50%
+		),
+		radial-gradient(
+			at 0% 0%,
+			rgba(208, 216, 221, 0.875) 0px,
+			transparent 50%
+		);
+	z-index: 10;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	place-items: center;
+	box-shadow: -3rem -12rem 20rem #19202437 inset;
+	transform: translateX(-100%);
+	backdrop-filter: blur(100px);
+	transition: transform 500ms ease-in-out;
+	overflow: hidden;
+
+	div {
+		max-width: 1440px;
+		height: 75vh;
+		display: grid;
+		grid-template-rows: 2fr auto;
+		grid-column: 2 / span 10;
+
+		button {
+			position: absolute;
+			right: 2rem;
+			top: 2rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 1rem;
+			background-color: colors.$accent1;
+			border-radius: 50%;
+		}
+
+		ul {
+			padding: 0;
+		}
+
+		.sidebar-menu {
+			grid-column: span 1;
+			grid-row: 1 / span 1;
+			justify-self: center;
+			align-self: center;
+		}
+
+		.sidebar-link {
+			font-family: typography.$fancy-font;
+			text-transform: capitalize;
+			font-size: 5rem;
+			transition: all 50ms ease-in-out;
+			text-align: center;
+			// letter-spacing: typography.$h1-spacing;
+			letter-spacing: normal;
+			color: white;
+			font-weight: normal;
+		}
+
+		.sidebar-link::after {
+			content: ".";
+			color: colors.$text-color;
+			opacity: 0.5;
+		}
+
+		@media (max-width: 1023px) {
+			.sidebar-link {
+				font-size: 4rem;
+				letter-spacing: normal;
+				margin-bottom: 1rem;
+				line-height: 100%;
+			}
+		}
+
+		.sidebar-link:hover {
+			color: colors.$bg-color;
+		}
+
+		.sidebar-social-list {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 2rem;
+			justify-content: center;
+			align-self: start;
+		}
+
+		.sidebar-social-i {
+			display: flex;
+			align-self: center;
+		}
+
+		svg:hover path {
+			fill: colors.$bg-color;
+			transition: all 100ms ease-in-out;
+		}
+
+		.sidebar-x:hover path {
+			fill: colors.$text-color;
+		}
+	}
+
+	@media (max-width: 900px) {
+		background-color: colors.$accent2;
+	}
+}
+
+.show-sidebar {
+	transform: translateX(0);
+}
+
+.fun-self-portrait {
+	border-radius: 12px;
+	box-shadow: 0 12rem 10rem -2.68rem rgba(225, 85, 17, 0.25);
+	-webkit-box-shadow: 0 12rem 10rem -2.68rem rgba(225, 85, 17, 0.25);
+	-moz-box-shadow: 0 12rem 10rem -2.68rem rgba(225, 85, 17, 0.25);
+	width: 80%;
+	display: grid;
+	justify-self: center;
+
+	@media (max-width: 425px) {
+		min-width: 100%;
+		box-shadow: 0 8rem 9rem -2.68rem rgba(225, 85, 17, 0.25);
+		-webkit-box-shadow: 0 8rem 9rem -2.68rem rgba(225, 85, 17, 0.25);
+		-moz-box-shadow: 0 8rem 9rem -2.68rem rgba(225, 85, 17, 0.25);
+	}
+}
+
+.skills-container {
+	display: flex;
+	gap: 1.5rem;
+	flex-wrap: wrap;
+	font-size: 0;
+	justify-content: start;
+	padding-bottom: 2rem;
+
+	@media (max-width: 425px) {
+		gap: 1rem;
+	}
+
+	.skills-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: baseline;
+
+		svg {
+			margin-bottom: 0.25rem;
+		}
+
+		p {
+			font-size: 0.85rem;
+			font-weight: 500;
+			margin-bottom: 0.5rem;
+			line-height: 1.1rem;
+			text-align: center;
+		}
+	}
+}
+
+.about-btn {
+	margin-top: 1rem;
+}
+
+/* Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #d0d8dd #212b30;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+	width: 10px;
+	width: 10px;
+}
+*::-webkit-scrollbar-track {
+	border-radius: 5px;
+	background-color: #212b309f;
+}
+
+*::-webkit-scrollbar-track:hover {
+	background-color: #192024;
+}
+
+*::-webkit-scrollbar-track:active {
+	background-color: #212b30;
+}
+
+*::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: #d0d8dd9c;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background-color: #f5f5f5;
+}
+
+*::-webkit-scrollbar-thumb:active {
+	background-color: #e15511;
+}
+
+.my-blog-txt {
+	position: absolute;
+	width: 10rem;
+	bottom: 5rem;
+}
