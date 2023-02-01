@@ -81,10 +81,10 @@
 			align-self: center;
 		}
 
-		.sidebar-link {
+		.sidebar-link a {
 			font-family: typography.$fancy-font;
 			text-transform: capitalize;
-			font-size: 5rem;
+			font-size: 3.5rem;
 			transition: all 50ms ease-in-out;
 			text-align: center;
 			// letter-spacing: typography.$h1-spacing;

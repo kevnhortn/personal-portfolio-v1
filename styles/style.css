@@ -120,7 +120,8 @@ small {
   h3 {
     font-size: 1.1rem;
   }
-  p {
+  p,
+.about-link-txt {
     font-size: 1rem;
   }
 }
@@ -1188,10 +1189,10 @@ button:hover {
   justify-self: center;
   align-self: center;
 }
-.sidebar div .sidebar-link {
+.sidebar div .sidebar-link a {
   font-family: "Attractype", "Syne", "Montserrat", "Gills Sans", sans-serif;
   text-transform: capitalize;
-  font-size: 5rem;
+  font-size: 3.5rem;
   transition: all 50ms ease-in-out;
   text-align: center;
   letter-spacing: normal;
