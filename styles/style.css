@@ -1245,9 +1245,6 @@ button:hover {
 
 .fun-self-portrait {
   border-radius: 12px;
-  box-shadow: 0 12rem 10rem -2.68rem rgba(225, 85, 17, 0.25);
-  -webkit-box-shadow: 0 12rem 10rem -2.68rem rgba(225, 85, 17, 0.25);
-  -moz-box-shadow: 0 12rem 10rem -2.68rem rgba(225, 85, 17, 0.25);
   width: 80%;
   display: grid;
   justify-self: center;
