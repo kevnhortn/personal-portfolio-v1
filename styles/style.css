@@ -303,6 +303,7 @@ button:hover {
 @media (max-width: 425px) {
   .grid__main header {
     text-align: center;
+    padding: 12rem 0 2rem 0;
   }
 }
 .grid__main header .top-header-area {
