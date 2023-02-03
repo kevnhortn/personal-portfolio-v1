@@ -138,7 +138,8 @@ a:active {
 	transition: all 100ms ease-in-out;
 }
 
-button {
+button,
+.resume-btn {
 	font-family: $paragraph-font;
 	border: none;
 	padding: 0.75rem 2.25rem;

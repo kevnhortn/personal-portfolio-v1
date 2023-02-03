@@ -142,7 +142,8 @@ a:active {
   transition: all 100ms ease-in-out;
 }
 
-button {
+button,
+.resume-btn {
   font-family: "Montserrat", "Gill Sans", "Gill Sans MT", sans-serif;
   border: none;
   padding: 0.75rem 2.25rem;
@@ -265,6 +266,7 @@ button:hover {
 @media (max-width: 1000px) {
   .grid .nav-grid .nav-container .nav-btn-wrapper .hamburger-btn {
     display: flex;
+    padding: 1rem;
   }
   .grid .nav-grid .nav-container .nav-btn-wrapper .resume-btn {
     display: none;
