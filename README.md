@@ -1,10 +1,11 @@
 
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://github.com/kevnhortn/image-hosting-rep/blob/main/Group%2036.png" alt="Personal Portfolio Website" width="200"></a>
+  <a href="http://kevinhorton.dev" target="_blank"><img src="https://github.com/kevnhortn/image-hosting-rep/blob/main/Group%2036.png" alt="Personal Portfolio Website" width="200"></a>
+<br>
+<br>
+	Personal Portfolio Website v1	
 </h1>
-
-<h1 align="center">Personal Portfolio Website v1</h1>
 
 <h4 align="center">The first iteration of my <a href="https://kevinhorton.dev">kevinhorton.dev</a> built with HTML, SASS, and JavaScript.</h4>
 
