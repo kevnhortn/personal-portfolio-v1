@@ -10,7 +10,7 @@
 <h4 align="center">The first iteration of my <a href="https://kevinhorton.dev">kevinhorton.dev</a> built with HTML, SASS, and JavaScript.</h4>
 <br>
 
-![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
+<img src="https://github.com/kevnhortn/personal-portfolio-v1/blob/master/images/portfolio-capture.png" width="100%">
 
 ## Key Features
 
