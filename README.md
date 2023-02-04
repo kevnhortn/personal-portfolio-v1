@@ -10,7 +10,7 @@
   <br>
 </h1>
 
-<h4 align="center">The first iteration of my <a href="https://kevinhorton.dev">portfolio site</a> built with HTML, SASS, and JavaScript.</h4>
+<h4 align="center">The first iteration of my <a href="https://kevinhorton.dev">kevinhorton.dev</a> built with HTML, SASS, and JavaScript.</h4>
 
 <p align="center">
   <a href="https://badge.fury.io/js/electron-markdownify">
