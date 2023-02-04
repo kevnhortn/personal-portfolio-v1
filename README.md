@@ -11,23 +11,3 @@
 <br>
 
 <img src="https://github.com/kevnhortn/personal-portfolio-v1/blob/master/images/portfolio-capture.png" width="100%">
-
-## Getting Started
-
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
-
-```bash
-# Clone this repository
-$ git clone https://github.com/kevnhortn/personal-portfolio-v1
-
-# Go into the repository
-$ cd personal-portfolio-v1
-
-# Install dependencies
-$ npm install
-
-# Run the app
-$ npm start
-```
-
-
