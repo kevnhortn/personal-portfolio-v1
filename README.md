@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://github.com/kevnhortn/image-hosting-rep/blob/main/blurry-circle-txt.png" alt="Personal Portfolio Website" width="200"></a>
+  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://github.com/kevnhortn/image-hosting-rep/blob/main/blurry-circle-txt%20(1).png" alt="Personal Portfolio Website" width="200"></a>
   <br>
   Personal Portfolio Website v1
   <br>
