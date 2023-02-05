@@ -88,6 +88,7 @@ for (let p = 0; p < openModalBtns.length; p++) {
 	function closeModal() {
 		modals[p].classList.toggle("hidden");
 		document.body.style.overflow = "visible";
+
 		// modals[p].classList.toggle("slide-fwd-center");
 	}
 }
