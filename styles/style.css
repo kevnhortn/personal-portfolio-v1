@@ -852,8 +852,9 @@ button:hover {
     grid-template-columns: 1fr;
     width: 85vw;
     height: 85vh;
-    place-self: center;
-    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 .modal-container .modal-overlay {
@@ -868,6 +869,11 @@ button:hover {
   z-index: 101;
   background-color: #ededed;
   background-image: radial-gradient(at 54% 80%, rgba(92, 173, 155, 0.56) 0px, transparent 50%), radial-gradient(at 16% 37%, rgba(229, 186, 143, 0.412) 0px, transparent 50%), radial-gradient(at 69% 47%, rgba(116, 191, 216, 0.349) 0px, transparent 50%), radial-gradient(at 22% 63%, rgba(110, 112, 242, 0.326) 0px, transparent 50%), radial-gradient(at 80% 100%, rgba(232, 122, 100, 0.406) 0px, transparent 50%), radial-gradient(at 0% 0%, rgba(208, 216, 221, 0.429) 0px, transparent 50%);
+}
+@media (max-width: 425px) {
+  .modal-container .modal-overlay {
+    height: 100%;
+  }
 }
 .modal-container .modal-content {
   display: flex;
