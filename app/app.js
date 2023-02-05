@@ -15,6 +15,7 @@ const openModalBtns = document.querySelectorAll(".open-modal");
 const overlays = document.querySelectorAll(".modal-overlay");
 const modals = document.querySelectorAll(".modal-container");
 const modalWrappers = document.querySelectorAll(".modal-wrapper");
+const projectPictures = document.querySelectorAll(".projects__picture");
 
 hamburgerBtn.addEventListener("click", showSidebar);
 closeSidebarBtn.addEventListener("click", hideSidebar);
@@ -75,6 +76,7 @@ window.onscroll = function (e) {
 
 for (let p = 0; p < openModalBtns.length; p++) {
 	openModalBtns[p].addEventListener("click", showModal);
+	projectPictures[p].addEventListener("click", showModal);
 	closeModalBtns[p].addEventListener("click", closeModal);
 	overlays[p].addEventListener("click", closeModal);
 
