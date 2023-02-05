@@ -51,7 +51,6 @@ window.onscroll = function (e) {
 	navGrid.style.backdropFilter = "blur(50px)";
 	navGrid.style.boxShadow = "0 1rem 3rem -1.62rem rgb(25, 32, 36, 0.75)";
 	navContainer.style.margin = "1rem 0";
-	resumeBtn.firstElementChild.style.boxShadow = "none";
 
 	scrollY <= Math.max(this.lastScroll, 50) ||
 	window.innerWidth <= 1200 ||
@@ -64,8 +63,6 @@ window.onscroll = function (e) {
 		navContainer.style.margin = "3rem 0 0 0";
 		navGrid.style.backdropFilter = "none";
 		navGrid.style.boxShadow = "none";
-		resumeBtn.firstElementChild.style.boxShadow =
-			"0px 10px 35px rgb(225, 85, 17, 0.25)";
 	}
 
 	this.lastScroll = scrollY;
@@ -88,7 +85,6 @@ for (let p = 0; p < openModalBtns.length; p++) {
 	function closeModal() {
 		modals[p].classList.toggle("hidden");
 		document.body.style.overflow = "visible";
-
 		// modals[p].classList.toggle("slide-fwd-center");
 	}
 }
