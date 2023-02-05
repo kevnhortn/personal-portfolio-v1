@@ -63,6 +63,8 @@ window.onscroll = function (e) {
 		navContainer.style.margin = "3rem 0 0 0";
 		navGrid.style.backdropFilter = "none";
 		navGrid.style.boxShadow = "none";
+		resumeBtn.firstElementChild.style.boxShadow =
+			"0px 10px 35px rgb(225, 85, 17, 0.25)";
 	}
 
 	this.lastScroll = scrollY;
