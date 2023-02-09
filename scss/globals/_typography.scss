@@ -10,26 +10,29 @@ Legacy way of creating CSS variables
 // 	--paragraph-font: "Montserrat", "Gill Sans", "Gill Sans MT", sans-serif;
 // }
 
-$heading-font: "Syne", "Montserrat", "Gill Sans", "Gill Sans MT", sans-serif;
 $paragraph-font: "Montserrat", "Gill Sans", "Gill Sans MT", sans-serif;
-$h1-spacing: -0.3rem;
+$h1-spacing: -0.2rem;
 $fancy-font: "Attractype", "Syne", "Montserrat", "Gills Sans", sans-serif;
+$heading-font: "Syne", "Montserrat", "Gill Sans", "Gill Sans MT", sans-serif;
 
 h1,
 h2 {
-	// font-family: $heading-font;
-	font-family: $fancy-font;
+	font-family: $heading-font;
 	margin: 0;
 	color: colors.$text-color;
-}
-
-h1,
-h2 {
 	line-height: 100%;
-	// text-transform: uppercase;
-	letter-spacing: normal !important;
-	text-transform: none;
-	font-weight: normal;
+
+	@media (max-width: 1439px) {
+		h1 {
+			font-size: 2rem;
+			line-height: 110%;
+		}
+
+		h3 {
+			font-size: 1.5rem;
+			margin-bottom: 0.5rem;
+		}
+	}
 }
 
 // Original
@@ -38,13 +41,23 @@ h2 {
 // }
 
 h1 {
-	font-size: 7rem;
+	font-size: 2.75rem;
 	line-height: 100%;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: normal;
+
+	@media (min-width: 62.5rem) {
+		h1 {
+			letter-spacing: -0.1rem;
+		}
+	}
 }
 
 h2 {
-	font-size: 3rem;
+	font-size: 2.75rem;
 	margin-bottom: 2rem;
+	font-weight: 500;
 }
 
 .projects__subtitle {
@@ -99,7 +112,7 @@ small {
 
 @media (max-width: 768px) {
 	h2 {
-		font-size: 3rem;
+		font-size: 2rem;
 	}
 
 	.projects__subtitle {

@@ -191,7 +191,7 @@
 			}
 
 			.big-arrow-down svg {
-				width: 3rem;
+				width: 2rem;
 			}
 
 			@media (max-width: 768px) {
@@ -258,19 +258,19 @@
 				fill: colors.$text-color;
 			}
 
-			.line-up {
-				align-self: end;
-			}
-
 			@media (min-width: 62.5rem) {
 				h1 {
-					letter-spacing: -0.2rem;
+					letter-spacing: -0.1rem;
+				}
+				h2 {
+					font-size: 1.5rem;
 				}
 			}
 
 			@media (max-width: 1439px) {
 				h1 {
-					font-size: 4rem;
+					font-size: 2rem;
+					line-height: 110%;
 				}
 
 				h3 {
@@ -306,8 +306,8 @@
 
 			@media (max-width: 425px) {
 				h1 {
-					font-size: 2.5rem;
-					line-height: 100%;
+					font-size: 1.5rem;
+					line-height: 120%;
 					letter-spacing: 0;
 				}
 
@@ -792,24 +792,21 @@
 		}
 
 		.modal-heading-big {
-			font-size: 3rem;
+			font-size: 1.5rem;
 			margin-bottom: 2rem;
 			letter-spacing: 0.06rem !important;
+			line-height: 120%;
 
-			@media (min-width: 62.5rem) and (max-width: 1350px) {
-				font-size: 2.25rem;
+			@media (min-width: 62.5rem) {
+				font-size: 1.5rem;
 			}
 
 			@media (min-width: 426px) and (max-width: 62.5rem) {
-				font-size: 2rem;
-				margin-bottom: 2rem;
-				line-height: 2.25rem;
+				font-size: 1.25rem;
 			}
 
 			@media (max-width: 425px) {
-				font-size: 1.75rem;
-				margin-bottom: 2rem;
-				line-height: 2rem;
+				font-size: 1rem;
 			}
 		}
 
@@ -881,14 +878,14 @@
 	.modal-img-wrapper {
 		display: flex;
 
-		@media (min-width: 426px) and (max-width: 62.5rem) {
+		@media (min-width: 660px) and (max-width: 62.5rem) {
 			display: flex;
 			height: 35%;
 			justify-content: center;
 		}
 
-		@media (max-width: 425px) {
-			dislpay: none;
+		@media (max-width: 659px) {
+			display: none;
 			visibility: hidden;
 			height: 0%;
 		}
@@ -900,14 +897,14 @@
 		align-self: center;
 		border-radius: 12px;
 
-		@media (min-width: 426px) and (max-width: 62.5rem) {
+		@media (min-width: 660px) and (max-width: 62.5rem) {
 			transform: translateX(0);
 			transform: translateY(-5%);
 			width: 50%;
 			justify-self: center;
 		}
 
-		@media (max-width: 425px) {
+		@media (max-width: 659px) {
 			transform: translateX(0);
 			border-radius: 12px 12px 0 0;
 			display: none;

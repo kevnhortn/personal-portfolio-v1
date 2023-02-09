@@ -33,27 +33,41 @@ Legacy way of creating CSS variables
 */
 h1,
 h2 {
-  font-family: "Attractype", "Syne", "Montserrat", "Gills Sans", sans-serif;
+  font-family: "Syne", "Montserrat", "Gill Sans", "Gill Sans MT", sans-serif;
   margin: 0;
   color: #f5f5f5;
-}
-
-h1,
-h2 {
   line-height: 100%;
-  letter-spacing: normal !important;
-  text-transform: none;
-  font-weight: normal;
+}
+@media (max-width: 1439px) {
+  h1 h1,
+  h2 h1 {
+    font-size: 2rem;
+    line-height: 110%;
+  }
+  h1 h3,
+  h2 h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 2.75rem;
   line-height: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: normal;
+}
+@media (min-width: 62.5rem) {
+  h1 h1 {
+    letter-spacing: -0.1rem;
+  }
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.75rem;
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 
 .projects__subtitle {
@@ -109,7 +123,7 @@ small {
 
 @media (max-width: 768px) {
   h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .projects__subtitle {
     font-size: 1.5rem;
@@ -121,7 +135,7 @@ small {
     font-size: 1.1rem;
   }
   p,
-.about-link-txt {
+  .about-link-txt {
     font-size: 1rem;
   }
 }
@@ -355,26 +369,14 @@ button:hover {
 .grid__main header .big-arrow-down {
   grid-column: 1/span 1;
   align-self: end;
-  -webkit-animation: up-and-down 2s ease-in-out infinite;
-          animation: up-and-down 2s ease-in-out infinite;
+  animation: up-and-down 2s ease-in-out infinite;
 }
 .grid__main header .big-arrow-down svg {
-  width: 3rem;
+  width: 2rem;
 }
 @media (max-width: 768px) {
   .grid__main header .big-arrow-down svg {
     width: 2rem !important;
-  }
-}
-@-webkit-keyframes up-and-down {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-25%);
-  }
-  100% {
-    transform: translateY(0);
   }
 }
 @keyframes up-and-down {
@@ -428,17 +430,18 @@ button:hover {
 .grid__main header svg:hover path {
   fill: #f5f5f5;
 }
-.grid__main header .line-up {
-  align-self: end;
-}
 @media (min-width: 62.5rem) {
   .grid__main header h1 {
-    letter-spacing: -0.2rem;
+    letter-spacing: -0.1rem;
+  }
+  .grid__main header h2 {
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 1439px) {
   .grid__main header h1 {
-    font-size: 4rem;
+    font-size: 2rem;
+    line-height: 110%;
   }
   .grid__main header h3 {
     font-size: 1.5rem;
@@ -469,8 +472,8 @@ button:hover {
 }
 @media (max-width: 425px) {
   .grid__main header h1 {
-    font-size: 2.5rem;
-    line-height: 100%;
+    font-size: 1.5rem;
+    line-height: 120%;
     letter-spacing: 0;
   }
   .grid__main header h3 {
@@ -508,14 +511,6 @@ button:hover {
 .grid__main .about .image-wrapper .circle-txt {
   position: absolute;
 }
-@-webkit-keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -525,8 +520,7 @@ button:hover {
   }
 }
 .grid__main .about .image-wrapper .circle-txt svg {
-  -webkit-animation: rotate 15s linear infinite;
-          animation: rotate 15s linear infinite;
+  animation: rotate 15s linear infinite;
 }
 @media (min-width: 62.5rem) {
   .grid__main .about .image-wrapper .circle-txt {
@@ -562,14 +556,6 @@ button:hover {
     top: 22rem;
     justify-self: center;
   }
-  @-webkit-keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
-  }
   @keyframes rotate {
     from {
       transform: rotate(0deg);
@@ -579,8 +565,7 @@ button:hover {
     }
   }
   .grid__main .about .image-wrapper-mobile .circle-txt svg {
-    -webkit-animation: rotate 15s linear infinite;
-            animation: rotate 15s linear infinite;
+    animation: rotate 15s linear infinite;
   }
 }
 @media (max-width: 1024px) and (max-width: 320px) {
@@ -605,7 +590,7 @@ button:hover {
     height: auto;
   }
   .grid__main h2,
-.grid__main .projects__subtitle {
+  .grid__main .projects__subtitle {
     text-align: center;
   }
 }
@@ -764,7 +749,6 @@ button:hover {
   flex-wrap: wrap;
   row-gap: 0.5rem;
   transition: all 100ms ease-in-out;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
@@ -796,18 +780,7 @@ button:hover {
   align-items: center;
   overflow: hidden;
   z-index: 100;
-  -webkit-animation: fadeIn 300ms ease-in-out;
-          animation: fadeIn 300ms ease-in-out;
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.75);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+  animation: fadeIn 300ms ease-in-out;
 }
 @keyframes fadeIn {
   0% {
@@ -821,8 +794,7 @@ button:hover {
 }
 @media (max-width: 768px) {
   .modal-container {
-    -webkit-animation: none;
-            animation: none;
+    animation: none;
   }
 }
 .modal-container .modal-wrapper {
@@ -918,27 +890,24 @@ button:hover {
   }
 }
 .modal-container .modal-content .modal-heading-big {
-  font-size: 3rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
   letter-spacing: 0.06rem !important;
+  line-height: 120%;
 }
-@media (min-width: 62.5rem) and (max-width: 1350px) {
+@media (min-width: 62.5rem) {
   .modal-container .modal-content .modal-heading-big {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 426px) and (max-width: 62.5rem) {
   .modal-container .modal-content .modal-heading-big {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    line-height: 2.25rem;
+    font-size: 1.25rem;
   }
 }
 @media (max-width: 425px) {
   .modal-container .modal-content .modal-heading-big {
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
-    line-height: 2rem;
+    font-size: 1rem;
   }
 }
 .modal-container .modal-content .modal-description {
@@ -1008,16 +977,16 @@ button:hover {
 .modal-container .modal-img-wrapper {
   display: flex;
 }
-@media (min-width: 426px) and (max-width: 62.5rem) {
+@media (min-width: 660px) and (max-width: 62.5rem) {
   .modal-container .modal-img-wrapper {
     display: flex;
     height: 35%;
     justify-content: center;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 659px) {
   .modal-container .modal-img-wrapper {
-    dislpay: none;
+    display: none;
     visibility: hidden;
     height: 0%;
   }
@@ -1028,7 +997,7 @@ button:hover {
   align-self: center;
   border-radius: 12px;
 }
-@media (min-width: 426px) and (max-width: 62.5rem) {
+@media (min-width: 660px) and (max-width: 62.5rem) {
   .modal-container .project-img {
     transform: translateX(0);
     transform: translateY(-5%);
@@ -1036,7 +1005,7 @@ button:hover {
     justify-self: center;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 659px) {
   .modal-container .project-img {
     transform: translateX(0);
     border-radius: 12px 12px 0 0;
@@ -1148,8 +1117,8 @@ button:hover {
     text-align: center;
   }
   .footer-container .footer-left,
-.footer-container .footer-right,
-.footer-container .copyright-area {
+  .footer-container .footer-right,
+  .footer-container .copyright-area {
     text-align: center !important;
   }
 }
