@@ -59,25 +59,40 @@
 		}
 
 		.sidebar-menu {
+			display: flex;
+			flex-direction: column;
 			grid-column: span 1;
 			grid-row: 1 / span 1;
 			justify-self: center;
 			align-self: center;
+			text-align: center;
+			gap: 2rem;
 		}
 
 		.sidebar-link a {
-			font-family: typography.$fancy-font;
-			text-transform: capitalize;
-			font-size: 3.5rem;
+			font-family: typography.$heading-font;
+			text-transform: uppercase;
 			transition: all 50ms ease-in-out;
 			text-align: center;
 			// letter-spacing: typography.$h1-spacing;
 			letter-spacing: normal;
 			color: white;
-			font-weight: normal;
+			font-weight: 600;
+
+			@media (max-width: 999px) {
+				font-size: 1.5rem;
+			}
+
+			@media (min-width: 62.5rem) {
+				font-size: 3rem;
+			}
 		}
 
-		.sidebar-link::after {
+		.sidebar-link a:hover {
+			color: colors.$bg-color;
+		}
+
+		.sidebar-link a::after {
 			content: ".";
 			color: colors.$text-color;
 			opacity: 0.5;
@@ -85,10 +100,8 @@
 
 		@media (max-width: 1023px) {
 			.sidebar-link {
-				font-size: 4rem;
 				letter-spacing: normal;
-				margin-bottom: 1rem;
-				line-height: 100%;
+				line-height: 120%;
 			}
 		}
 
@@ -99,7 +112,7 @@
 		.sidebar-social-list {
 			display: flex;
 			flex-wrap: wrap;
-			gap: 2rem;
+			gap: 1.5rem;
 			justify-content: center;
 			align-self: start;
 		}
