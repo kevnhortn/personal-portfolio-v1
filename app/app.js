@@ -49,6 +49,7 @@ window.onscroll = function (e) {
 
 	navGrid.style.backgroundColor = "rgba(17, 21, 24, 0.60)";
 	navGrid.style.backdropFilter = "blur(50px)";
+	navGrid.style["-webkit-backdrop-filter"] = "blur(50px)";
 	navGrid.style.boxShadow = "0 1rem 3rem -1.62rem rgb(25, 32, 36, 0.75)";
 	navContainer.style.margin = "1rem 0";
 
