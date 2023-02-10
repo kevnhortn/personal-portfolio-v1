@@ -170,7 +170,8 @@ button:hover {
 	cursor: pointer;
 }
 
-button:hover {
+button:hover,
+.resume-btn:hover {
 	padding: 0.75rem 3rem;
 }
 
