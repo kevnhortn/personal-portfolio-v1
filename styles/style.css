@@ -378,6 +378,7 @@ button:hover,
 }
 .grid__main header .big-arrow-down svg {
   width: 2rem;
+  padding-bottom: 1rem;
 }
 @media (max-width: 768px) {
   .grid__main header .big-arrow-down svg {
