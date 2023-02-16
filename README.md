@@ -7,7 +7,7 @@
 	Personal Portfolio Website - v1
 </h1>
 
-<h4 align="left">The first iteration of <a href="https://kevinhorton.dev">kevinhorton.dev</a> built with HTML, SASS, and JavaScript.</h4>
+<h4 align="center">The first iteration of <a href="https://kevinhorton.dev">kevinhorton.dev</a> built with HTML, SASS, and JavaScript.</h4>
 <br>
 
 As one of my favorite projects, this personal portfolio website lends itself to a beautifully simple design, characterized by an intentional layout. It is responsive and rich in personal taste seen in the dark color scheme and typography selection. The purpose of the site is to showcase my latest projects and highlight things I'm currently working on.
