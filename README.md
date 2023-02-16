@@ -13,3 +13,6 @@
 <img src="https://github.com/kevnhortn/personal-portfolio-v1/blob/master/images/portfolio-capture.png" width="100%">
 
 As one of my favorite projects, this personal portfolio website lends itself to a beautifully simple design, characterized by an intentional layout. It is responsive and rich in personal taste seen in the dark color scheme and typography selection. The purpose of the site is to showcase my latest projects and highlight things I'm currently working on.
+
+## License
+MIT
