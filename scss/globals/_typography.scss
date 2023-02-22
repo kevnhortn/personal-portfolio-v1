@@ -12,6 +12,7 @@ Legacy way of creating CSS variables
 
 $paragraph-font: "Montserrat", "Gill Sans", "Gill Sans MT", sans-serif;
 $h1-spacing: -0.2rem;
+$h2-spacing: -0.05rem;
 $fancy-font: "Attractype", "Syne", "Montserrat", "Gills Sans", sans-serif;
 $heading-font: "Syne", "Montserrat", "Gill Sans", "Gill Sans MT", sans-serif;
 
@@ -63,6 +64,7 @@ h2 {
 	font-size: 2.75rem;
 	margin-bottom: 2rem;
 	font-weight: 500;
+	letter-spacing: $h2-spacing;
 }
 
 .projects__subtitle {
