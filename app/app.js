@@ -52,6 +52,7 @@ window.onscroll = function (e) {
 	navGrid.style["-webkit-backdrop-filter"] = "blur(50px)";
 	navGrid.style.boxShadow = "0 1rem 3rem -1.62rem rgb(25, 32, 36, 0.75)";
 	navContainer.style.margin = "1rem 0";
+	resumeBtn.style.boxShadow = "none";
 
 	scrollY <= Math.max(this.lastScroll, 50) ||
 	window.innerWidth <= 1200 ||
@@ -64,8 +65,7 @@ window.onscroll = function (e) {
 		navContainer.style.margin = "3rem 0 0 0";
 		navGrid.style.backdropFilter = "none";
 		navGrid.style.boxShadow = "none";
-		// resumeBtn.firstElementChild.style.boxShadow =
-		// 	"0px 10px 35px rgb(225, 85, 17, 0.25)";
+		resumeBtn.style.boxShadow = "0px 10px 35px rgb(225, 85, 17, 0.25)";
 	}
 
 	this.lastScroll = scrollY;
