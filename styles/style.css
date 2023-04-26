@@ -348,7 +348,7 @@ button:hover,
 }
 @media (min-width: 62.5rem) {
   .grid__main header h3 {
-    margin-bottom: 0rem;
+    margin-bottom: 0.5rem;
   }
 }
 .grid__main header .name {
