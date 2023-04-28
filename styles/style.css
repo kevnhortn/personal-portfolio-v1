@@ -1275,8 +1275,8 @@ button:hover,
 @media (max-width: 425px) {
   .fun-self-portrait {
     min-width: 100%;
-    box-shadow: 0 8rem 9rem -2.68rem rgba(225, 85, 17, 0.25);
-    -webkit-box-shadow: 0 8rem 9rem -2.68rem rgba(225, 85, 17, 0.25);
+    box-shadow: 0 8rem 9rem -2.68rem rgba(255, 164, 120, 0.25);
+    -webkit-box-shadow: 0 8rem 9rem -2.68rem rgba(255, 164, 120, 0.25);
     -moz-box-shadow: 0 8rem 9rem -2.68rem rgba(225, 85, 17, 0.25);
   }
 }
