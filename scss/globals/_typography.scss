@@ -171,6 +171,10 @@ button,
 	box-shadow: 0px 10px 35px rgba(225, 85, 17, 0.25);
 }
 
+.resume-btn {
+	color: colors.$bg-color !important;
+}
+
 a:hover,
 button:hover {
 	color: colors.$accent2;

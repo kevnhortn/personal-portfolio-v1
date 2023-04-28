@@ -174,6 +174,10 @@ button,
   box-shadow: 0px 10px 35px rgba(225, 85, 17, 0.25);
 }
 
+.resume-btn {
+  color: #192024 !important;
+}
+
 a:hover,
 button:hover {
   color: #d0d8dd;
@@ -199,7 +203,7 @@ button:hover,
 
 .orange-txt {
   font-weight: 800;
-  color: #e15511;
+  color: #ffa478;
 }
 
 @font-face {
@@ -264,7 +268,7 @@ button:hover,
 }
 .grid .nav-grid .nav-container .nav-wrapper .menu-item a::after {
   content: ".";
-  color: #e15511;
+  color: #ffa478;
 }
 .grid .nav-grid .nav-container .nav-btn-wrapper {
   justify-self: end;
@@ -294,7 +298,7 @@ button:hover,
 }
 .grid .nav-grid .nav-container .nav-btn-wrapper .o-btn {
   color: #f5f5f5;
-  background-color: #e15511;
+  background-color: #ffa478;
 }
 .grid__main {
   display: grid;
@@ -352,7 +356,7 @@ button:hover,
   }
 }
 .grid__main header .name {
-  color: #e15511;
+  color: #ffa478;
   font-weight: 600;
 }
 .grid__main header .header-btns {
@@ -778,7 +782,7 @@ button:hover,
 }
 .grid__main .projects .underline::after {
   content: "";
-  border-bottom: 4px solid #e15511;
+  border-bottom: 4px solid #ffa478;
   height: 3px;
   width: 100%;
   box-shadow: 0px 0.3rem 0.65rem -0.05rem rgba(225, 85, 17, 0.95);
@@ -974,7 +978,8 @@ button:hover,
   }
 }
 .modal-container .modal-close-btn {
-  background-color: #e15511;
+  background-color: #ffa478;
+  color: #192024;
   position: absolute;
   padding: 1rem;
   display: flex;
@@ -1096,7 +1101,7 @@ button:hover,
 .footer-container .footer-wrapper .footer-right a {
   font-size: 1.25rem;
   padding-bottom: 0.5rem;
-  border-bottom: 4px solid #e15511;
+  border-bottom: 4px solid #ffa478;
 }
 .footer-container .footer-wrapper .footer-right p {
   margin-bottom: 0;
@@ -1181,7 +1186,7 @@ button:hover,
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  background-color: #e15511;
+  background-color: #ffa478;
   border-radius: 50%;
 }
 .sidebar div ul {
